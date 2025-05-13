@@ -14,7 +14,7 @@ function App() {
     script.onload = () => {
       if ((window as any).Twitch) {
         new (window as any).Twitch.Embed("twitch-embed", {
-          width: 854,
+          width: 900,
           height: 480,
           channel: "nepicktournaments",
           parent: [window.location.hostname],
