@@ -1,5 +1,7 @@
 import "./App.css";
+import Header from "./Header";
 import { useEffect, useRef } from "react";
+import { Link } from "react-router";
 
 function App() {
   const embedInitialized = useRef(false);
@@ -26,19 +28,11 @@ function App() {
 
   return (
     <>
-      <div className="font-poppins flex h-screen w-screen flex-col items-center justify-center gap-5 bg-[#1E1E1E] text-white">
-        <h1 className="text-center text-5xl font-bold italic underline decoration-[#4981FF] decoration-3 underline-offset-8">
-          <span className="text-[#4981FF]">5</span> DIGIT SUOMI TURNAUS
-        </h1>
-        <ul className="flex flex-row items-center justify-center gap-3">
-          <li className="hover:cursor-pointer hover:underline">Discord</li>
-          <img className="h-4 w-4" src="/favicon.png" alt="star" />
-          <li className="hover:cursor-pointer hover:underline">Sheet</li>
-          <img className="h-4 w-4" src="/favicon.png" alt="star" />
-          <li className="hover:cursor-pointer hover:underline">Twitch</li>
-          <img className="h-4 w-4" src="/favicon.png" alt="star" />
-          <li className="hover:cursor-pointer hover:underline">Challonge</li>
-        </ul>
+      <div className="font-poppins flex h-screen w-screen flex-col items-center justify-center gap-15 bg-[#1E1E1E] text-white">
+        <Header />
+        <div className="bg-[#4981FF] px-4 py-2 text-2xl font-medium">
+          <Link to="/mappoolit">Paina katoaksesi uusimmat mappoolit</Link>
+        </div>
         <section id="twitch-embed"></section>
       </div>
     </>
