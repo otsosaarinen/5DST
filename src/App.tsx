@@ -30,7 +30,7 @@ function App() {
     <>
       <div className="font-poppins flex h-screen w-screen flex-col items-center justify-center gap-15 bg-[#1E1E1E] text-white">
         <Header />
-        <div className="bg-[#4981FF] px-4 py-2 text-2xl font-medium">
+        <div className="bg-[#4981FF] px-4 py-2 text-2xl font-medium transition-all duration-200 ease-in hover:bg-white hover:text-[#4981FF]">
           <Link to="/mappoolit">Paina katoaksesi uusimmat mappoolit</Link>
         </div>
         <section id="twitch-embed"></section>
