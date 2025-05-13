@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 function Header() {
   return (
     <>
@@ -6,13 +8,23 @@ function Header() {
           <span className="text-[#4981FF]">5</span> DIGIT SUOMI TURNAUS
         </h1>
         <ul className="flex flex-row items-center justify-center gap-3">
-          <li className="hover:cursor-pointer hover:underline">Discord</li>
+          <li className="hover:cursor-pointer hover:underline">
+            <Link to="https://discord.gg/umRTqmwaTg">Discord</Link>
+          </li>
           <img className="h-4 w-4" src="/favicon.png" alt="star" />
-          <li className="hover:cursor-pointer hover:underline">Sheet</li>
+          <li className="hover:cursor-pointer hover:underline">
+            <Link to="https://docs.google.com/spreadsheets/d/1wnQdsWv7b2bA7r5lS94oV7LDhdF8OkxM1YhU8uSU2KU/edit?usp=sharing">
+              Sheet
+            </Link>
+          </li>
           <img className="h-4 w-4" src="/favicon.png" alt="star" />
-          <li className="hover:cursor-pointer hover:underline">Twitch</li>
+          <li className="hover:cursor-pointer hover:underline">
+            <Link to="https://www.twitch.tv/nepicktournaments">Twitch</Link>
+          </li>
           <img className="h-4 w-4" src="/favicon.png" alt="star" />
-          <li className="hover:cursor-pointer hover:underline">Challonge</li>
+          <li className="hover:cursor-pointer hover:underline">
+            <Link to="">Challonge</Link>
+          </li>
         </ul>
       </div>
     </>
