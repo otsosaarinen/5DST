@@ -55,9 +55,6 @@ function App() {
                 </section>
                 <div className="flex flex-row gap-5">
                     <div className="bg-[#4981FF] px-4 py-2 text-center text-2xl font-medium transition-all duration-200 ease-in hover:bg-white hover:text-[#1E1E1E]">
-                        <Link to="/mappoolit">Mappoolit</Link>
-                    </div>
-                    <div className="bg-[#4981FF] px-4 py-2 text-center text-2xl font-medium transition-all duration-200 ease-in hover:bg-white hover:text-[#1E1E1E]">
                         <Link to="/aikataulu">Aikataulu</Link>
                     </div>
                     <div className="bg-[#4981FF] px-4 py-2 text-center text-2xl font-medium transition-all duration-200 ease-in hover:bg-white hover:text-[#1E1E1E]">
